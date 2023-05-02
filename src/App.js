@@ -3,10 +3,12 @@ import Home from "./pages/Home";
 import Project from "./pages/Project";
 import Experience from "./pages/Experience";
 import Education from "./pages/Education";
+import Navbar from "./components/Navbar";
 function App() {
   return (
     <div className="App">
       <Router>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/projects" element={<Project />}></Route>
